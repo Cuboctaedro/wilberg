@@ -12,6 +12,19 @@ module.exports = {
           black: '#000',
           white: '#fff',
 
+          wilberg: {
+            main       : '#b2d23c',
+            digital    : '#8dcead',
+            gesund     : '#6f8bb7',
+            itegration : '#9fb29e',
+            wohnung    : '#d6b881',
+            wirtschaft : '#86ac51',
+            verkehr    : '#d4872e',
+            text       : '#4c4c4e',
+            borders    : '#606a70',
+            icons      : '#4c4c4e',
+          },
+
           gray: {
             100: '#f7fafc',
             200: '#edf2f7',
@@ -126,6 +139,7 @@ module.exports = {
 
         fontFamily: {
             sans: [
+                'Fira Sans',
                 '-apple-system',
                 'BlinkMacSystemFont',
                 '"Segoe UI"',
