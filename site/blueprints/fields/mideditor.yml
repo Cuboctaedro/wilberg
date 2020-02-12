@@ -1,5 +1,5 @@
 label: Text
- type: markdown
+type: markdown
 invisibles: false
 size: medium
 font:
@@ -7,15 +7,8 @@ font:
     scaling: true
     size: regular
 buttons:
-  - headlines
-    - h2
-    - h3
-    - h4
   - bold
   - italic
   - link
   - email
-  - ul
-  - ol
-  - blockquote
   - pagelink

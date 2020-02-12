@@ -11,7 +11,7 @@ tabs:
                     type: fields
                     fields:
                         text:
-                            extends: fields/fulleditor
+                            extends: fields/mideditor
                         featuredimage:
                             type: files
                             layout: cards

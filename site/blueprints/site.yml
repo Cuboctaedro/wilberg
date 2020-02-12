@@ -2,9 +2,7 @@ title: Site
 
 tabs:
     content:
-        label:
-            en: Content
-            el: Περιεχόμενο
+        label: Content
         icon: text
         columns:
           - width: 2/3
@@ -15,38 +13,96 @@ tabs:
                     status: all
                     templates: home
                     max: 1
-                pages:
+                sectionpages:
+                    headline: Sections
+                    type: pages
+                    status: all
+                    templates: section
+                events:
+                    headline: Kalendar
+                    type: pages
+                    status: all
+                    templates: event
+                    parent: site.find("events")
+                    text: " {{ page.title }}"
+                    info: " {{ page.date.toDate('d.m.Y') }}"
+                otherpages:
                     headline: Pages
                     type: pages
                     status: all
-                    templates: default
-                legal:
-                    headline: Legal Pages
-                    type: pages
-                    status: all
-                    templates: legal
+                    templates: 
+                      - about
+                      - contact
+                      - default
+                    create:
+                      - default
           - width: 1/3
             sections:
                 pagefiles:
                     extends: sections/pagefiles
-                siteseo:
-                    type: fields
-                    fields:
-                        sitetwitter:
-                            type: text
-                            label: Site Twitter Username
-                        facebook:
-                            type: url
-                            label: Facebook Page
-                        twitter:
-                            type: url
-                            label: Site Twitter Page
-                        instagram:
-                            type: url
-                            label: Instagram Page
-                        pinterest:
-                            type: url
-                            label: Pinterest Page
-                        linkedin:
-                            type: url
-                            label: LinkedIn Page
+    seo:
+        label: SEO
+        icon: search
+        sections:
+            siteseo:
+                type: fields
+                fields:
+                    sitetwitter:
+                        type: text
+                        label: Site Twitter Username
+                    facebook:
+                        type: url
+                        label: Facebook Page
+                    twitter:
+                        type: url
+                        label: Site Twitter Page
+                    instagram:
+                        type: url
+                        label: Instagram Page
+                    pinterest:
+                        type: url
+                        label: Pinterest Page
+                    linkedin:
+                        type: url
+                        label: LinkedIn Page
+    settings:
+        label: Settings
+        icon: cog
+        sections:
+            menus:
+                type: fields
+                fields:
+                    mainmenu:
+                        label: Main Menu
+                        type: structure
+                        fields:
+                            main:
+                                type: pages
+                                label: Menu item
+                                max: 1
+                            hasSubmenu:
+                                type: toggle
+                                text: Include a submenu?
+                            subMenu:
+                                type: pages
+                                label: Submenu items
+                                when:
+                                    hasSubmenu: true
+                    footermenu:
+                        label: Footer Menu
+                        type: structure
+                        fields:
+                            main:
+                                type: pages
+                                label: Menu item
+                                max: 1
+                            hasSubmenu:
+                                type: toggle
+                                text: Include a submenu?
+                            subMenu:
+                                type: pages
+                                label: Submenu items
+                                when:
+                                    hasSubmenu: true
+
+

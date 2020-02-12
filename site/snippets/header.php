@@ -23,9 +23,8 @@
 
     <div class="flex flex-col min-h-screen flex-none ">
 
-        <div class="fixed w-full flex-none flex flex-row flex-wrap justify-between  h-12 mb-6 sm:mb-12 bg-teal-500 shadow-2xl text-white z-10">
-            <?php snippet('nav/single'); ?>
-            <?php snippet('nav/languages'); ?>
+        <div class="w-full flex-none flex flex-row flex-wrap justify-between z-10">
+            <?php snippet('nav/nested'); ?>
         </div>
 
         <main class="flex-auto pt-24" id="main">

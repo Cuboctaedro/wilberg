@@ -1,0 +1,70 @@
+Sitetwitter: 
+
+----
+
+Facebook: 
+
+----
+
+Twitter: 
+
+----
+
+Instagram: 
+
+----
+
+Pinterest: 
+
+----
+
+Linkedin: 
+
+----
+
+Mainmenu:
+
+- 
+  main:
+    - wer-ich-bin
+  hassubmenu: 'false'
+  submenu: [ ]
+- 
+  main:
+    - digitalisierung
+  hassubmenu: 'false'
+  submenu: [ ]
+- 
+  main:
+    - gesundheit-bewegung
+  hassubmenu: 'false'
+  submenu: [ ]
+- 
+  main:
+    - integration-partnerstaedte-foerdermittel
+  hassubmenu: 'false'
+  submenu: [ ]
+- 
+  main:
+    - verkehr-mobilitaet
+  hassubmenu: 'false'
+  submenu: [ ]
+- 
+  main:
+    - wirtschaftsraum-arbeitsplaetze
+  hassubmenu: 'false'
+  submenu: [ ]
+- 
+  main:
+    - wohnraum
+  hassubmenu: 'false'
+  submenu: [ ]
+- 
+  main:
+    - kontakt
+  hassubmenu: 'false'
+  submenu: [ ]
+
+----
+
+Footermenu: 

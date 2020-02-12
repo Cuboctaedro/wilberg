@@ -17,7 +17,7 @@ module.exports = {
             digital    : '#8dcead',
             gesund     : '#6f8bb7',
             itegration : '#9fb29e',
-            wohnung    : '#d6b881',
+            wohnraum   : '#d6b881',
             wirtschaft : '#86ac51',
             verkehr    : '#d4872e',
             text       : '#4c4c4e',

@@ -8,9 +8,7 @@ columns:
             fields:
                 description:
                     type: textarea
-                    label:
-                        en: Description
-                        el: Περιγραφή
+                    label: Description
                     buttons: false
                     size: small
                 authortwitter:
