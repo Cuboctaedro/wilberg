@@ -42,11 +42,9 @@ tabs:
                             text:
                                 - Nein
                                 - Ja
-                        featuredimage:
-                            type: files
-                            layout: list
-                            multiple: false
-                            label: Featured Image
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
                         text:
                             extends: fields/mideditor
           - width: 1/3

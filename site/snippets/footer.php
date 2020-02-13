@@ -1,9 +1,9 @@
-        </main>
+    </main>
 
-        <footer class="flex-none container gutter pb-12" id="contact">
-        </footer>
+    <footer class="footer" id="footer">
+        <?php snippet('nav/nested'); ?>
+    </footer>
 
-    </div>
 <?= mix('/app.js') ?>
 </body>
 </html>

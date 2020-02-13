@@ -12,11 +12,9 @@ tabs:
                     fields:
                         text:
                             extends: fields/mideditor
-                        featuredimage:
-                            type: files
-                            layout: cards
-                            multiple: false
-                            label: Featured Image
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
                         sectionid:
                             type: hidden
 

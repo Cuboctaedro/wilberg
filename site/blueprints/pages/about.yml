@@ -22,11 +22,9 @@ tabs:
                                 content:
                                     extends: fields/plaineditor 
                                     label: Text
-                        featuredimage:
-                            type: files
-                            layout: list
-                            multiple: false
-                            label: Featured Image
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
                         downloads:
                             type: files
                             layout: list

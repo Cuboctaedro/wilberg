@@ -12,6 +12,9 @@ tabs:
                     fields:
                         text:
                             extends: fields/mideditor
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
 
           - width: 1/3
             sections:

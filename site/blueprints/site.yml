@@ -104,5 +104,7 @@ tabs:
                                 label: Submenu items
                                 when:
                                     hasSubmenu: true
-
+                    defaultheaderimage:
+                        extends: fields/image
+                        label: Default Header Image
 

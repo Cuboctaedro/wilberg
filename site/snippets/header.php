@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="<?= $kirby->language()->code() ?>">
+<html lang="de">
 <head>
     <title><?= e(!$page->isHomePage(), $page->title(). ' | ' , '') ?><?= $site->title() ?></title>
     <meta name="Description" content="<?= $page->metadescription()?>">
@@ -7,11 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="canonical" href="<?= $page->url() ?>"/>
-    <?php if($kirby->multilang()): ?>
-        <?php foreach($kirby->languages() as $lang): ?>
-            <link rel="alternate" hreflang="<?= $lang->code() ?>" href="<?= $page->url($lang->code()) ?>" />
-        <?php endforeach; ?>
-    <?php endif; ?>
+
     <?php snippet('meta');?>
 
     <?= mix('/app.css') ?>
@@ -21,10 +17,32 @@
 
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="flex flex-col min-h-screen flex-none ">
+    <header class="site-header">
+        
+        <?php snippet('nav/nested'); ?>
 
-        <div class="w-full flex-none flex flex-row flex-wrap justify-between z-10">
-            <?php snippet('nav/nested'); ?>
+        <?php if ($page->isHomePage()) : ?>
+            <h1 class="site-header__title">Wilberg</h1>
+            <h3 class="site-header__subtitle">Für Unna.</h3>
+        <?php else : ?>
+            <p class="site-header__title"><a href="<?= $site->url(); ?>">Wilberg</a></p>
+            <p class="site-header__subtitle">Für Unna.</p>
+        <?php endif; ?>
+
+        <?php 
+        if ($page->headerimage()->exists() && $page->headerimage()->isNotEmpty()) {
+            $hero = $page->headerimage()->toFile();
+        } elseif ($site->defaultheaderimage()->exists() && $site->defaultheaderimage()->isNotEmpty()) {
+            $hero = $site->defaultheaderimage()->toFile();
+        } else {
+            $hero = false;
+        }
+        if ( $hero ) : ?>
+        <div class="site-header__image">
+            <?php snippet( 'fullimage', array('image' => $hero) ); ?>
         </div>
+        <?php endif; ?>
 
-        <main class="flex-auto pt-24" id="main">
+    </header>
+
+    <main class="main" id="main">

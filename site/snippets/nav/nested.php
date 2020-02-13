@@ -1,10 +1,13 @@
 <?php 
-$menu = $site->menu()->toStructure();
+$menu = $site->mainmenu()->toStructure();
 if ($menu->isNotEmpty()) :
 ?>
 
-<nav class="main-menu">
-    <ul class="main-menu__list" >
+<nav class="main-menu w-full h-0 fixed z-10 overflow-hidden">
+
+    <button class="site-header__toggle" aria-label="Menü" id="menutoggle" aria-expanded="false" aria-controls="mainmenu"></button>
+
+    <ul class="main-menu__list" id="mainmenu">
     <?php foreach($menu as $item): ?>
         <?php if ($menu_item = $item->main()->toPage()) : ?>
 
@@ -22,7 +25,7 @@ if ($menu->isNotEmpty()) :
                     </ul>
                 </li>
             <?php else: ?>
- 
+
             <li class="main-menu__item">
                 <a class="<?php e($menu_item->isOpen(), ' is-active ') ?>" href="<?= $menu_item->url() ?>"><?= $menu_item->title() ?></a>
             </li>
@@ -33,5 +36,6 @@ if ($menu->isNotEmpty()) :
     <?php endforeach ?>
     </ul>
 </nav>
+
 
 <?php endif ?>

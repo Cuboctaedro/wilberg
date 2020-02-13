@@ -16,6 +16,9 @@ tabs:
                         intro:
                             extends: fields/plaineditor
                             label: Intro
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
                 publishedevents:
                     headline: Published Events
                     type: pages
