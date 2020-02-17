@@ -23,7 +23,15 @@ tabs:
                     type: pages
                     status: all
                     templates: event
-                    parent: site.find("events")
+                    parent: site.find("kalender")
+                    text: " {{ page.title }}"
+                    info: " {{ page.date.toDate('d.m.Y') }}"
+                blogposts:
+                    headline: Blog
+                    type: pages
+                    status: all
+                    templates: article
+                    parent: site.find("blog")
                     text: " {{ page.title }}"
                     info: " {{ page.date.toDate('d.m.Y') }}"
                 otherpages:

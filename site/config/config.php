@@ -3,5 +3,5 @@
 return [
     'debug' => true,
     'languages' => true,
-    'email' => require_once 'email.php'
+    // 'email' => require_once 'email.php'
 ];
