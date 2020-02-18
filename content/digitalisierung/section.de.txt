@@ -2,7 +2,15 @@ Title: Digitalisierung
 
 ----
 
-Featuredimage: 
+Text: Ecum laceatis as maximax imaxim nosanihillut modiorero tota dolu esto quas remquatur ab illaborit quamus, vendaec taquias et et undunti rerum volupta tecullo risciet accum quis debitem quos sum voluptature solupti onescip itaerum nus, aut porum faciatet qui cum quatur nihiliqui sinciaspe con consequo cone porum faciate. Nam quam, in exerit is aut expeditatem et volut lab ideri to quaeste ndunt. Met volore, sit, to con aut voloreptas exerum que labores reptasped quianihit, odit as dest esedi.
+
+----
+
+Headerimage: 
+
+----
+
+Sectionid: digital
 
 ----
 
@@ -10,4 +18,8 @@ Description:
 
 ----
 
-Sectionid: digital
+Authortwitter: 
+
+----
+
+Featuredimage: 

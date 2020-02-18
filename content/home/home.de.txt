@@ -1,0 +1,24 @@
+Title: Startseite
+
+----
+
+Text:
+
+**Unsere Welt befindet sich im ständigen Wandel.**
+Ecum laceatis as maximax imaxim nosanihillut modiorero tota 
+dolu esto quas remquatur ab illaborit quamus, vendaec taquias et et undunti rerum volupta tecullo risciet accum quis debitem quos sum voluptature solupti onescip itaerum nus, aut porum faciatet qui cum quatur nihiliqui sinciaspe con consequo cone porum faciate.
+**Wir schlagen ein neues Kapitel!**
+
+----
+
+Headerimage:
+
+- wilberg-home.jpg
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

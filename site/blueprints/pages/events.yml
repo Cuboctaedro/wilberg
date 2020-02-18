@@ -14,7 +14,7 @@ tabs:
                             type: text
                             label: Subtitle
                         intro:
-                            extends: fields/plaineditor
+                            extends: fields/mideditor
                             label: Intro
                         headerimage:
                             extends: fields/image
@@ -24,15 +24,15 @@ tabs:
                     type: pages
                     status: published
                     templates: event
-                    text: " {{ page.title }}"
-                    info: " {{ page.date.toDate('d.m.Y') }}"
+                    text: " {{ page.panelTableTitle }}"
+                    info: " {{ page.panelTableData }}"
                 draftevents:
                     headline: Draft Events
                     type: pages
                     status: draft
                     templates: event
-                    text: " {{ page.title }}"
-                    info: " {{ page.date.toDate('d.m.Y') }}"
+                    text: " {{ page.panelTableTitle }}"
+                    info: " {{ page.panelTableData }}"
           - width: 1/3
             sections:
                 pagefiles:

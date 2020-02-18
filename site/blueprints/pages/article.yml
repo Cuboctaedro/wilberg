@@ -10,14 +10,17 @@ tabs:
                 content:
                     type: fields
                     fields:
-                        text:
-                            extends: fields/fulleditor
                         date:
                             type: date
                             label: Date
+                            width: 1/2
                         tags:
                             label: Tags
                             type: tags
+                            width: 1/2
+                        text:
+                            extends: fields/mideditor
+                            label: Content
                         headerimage:
                             extends: fields/image
                             label: Header Image

@@ -152,6 +152,21 @@ module.exports = {
             ]
         },
 
+        fontSize: {
+          'xs'  : '0.75rem',  //12
+          'sm'  : '0.875rem', //14
+          'base': '1rem',     //16
+          'lg'  : '1.125rem', //18
+          'xl'  : '1.25rem',  //20
+          '2xl' : '1.5rem',   //24
+          '3xl' : '2rem',     //32
+          '4xl' : '3rem',     //48
+          '5xl' : '5rem',     //60
+          '6xl' : '7.5rem',  //120
+          '7xl' : '10rem',   //160
+          '8xl' : '15rem',   //240
+        },
+    
         container: {
             center: true,
         },

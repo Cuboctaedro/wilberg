@@ -13,21 +13,28 @@
     <?= mix('/app.css') ?>
 </head>
 
-<body class="font-sans text-base text-black bg-white " >
+<body class="font-sans text-base text-wilberg-text bg-white " >
 
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
+    <header class="site-hero relative">
         
         <?php snippet('nav/nested'); ?>
 
-        <?php if ($page->isHomePage()) : ?>
-            <h1 class="site-header__title">Wilberg</h1>
-            <p class="site-header__subtitle">Für Unna.</p>
-        <?php else : ?>
-            <p class="site-header__title"><a href="<?= $site->url(); ?>">Wilberg</a></p>
-            <p class="site-header__subtitle">Für Unna.</p>
-        <?php endif; ?>
+        <div class="site-hero__title site-header relative z-10 w-full pt-8 px-4">
+
+            <div class="site-hero__background absolute z-0 h-12 inset-x-0 top-0 "></div>
+
+            <?php if ($page->isHomePage()) : ?>
+                <h1 class="relative z-10 text-wilberg-main uppercase text-7xl leading-none tracking-widest font-black">Wilberg:</h1>
+                <p class="relative z-10 text-5xl leading-none">Für Unna.</p>
+            <?php else : ?>
+                <p class="relative z-10 text-wilberg-main uppercase text-7xl leading-none tracking-widest font-black"><a href="<?= $site->url(); ?>">Wilberg</a></p>
+                <p class="relative z-10 text-5xl leading-none">Für Unna.</p>
+            <?php endif; ?>
+
+        </div>
+
 
         <?php 
         if ($page->headerimage()->exists() && $page->headerimage()->isNotEmpty()) {
@@ -38,7 +45,7 @@
             $hero = false;
         }
         if ( $hero ) : ?>
-        <div class="site-header__image">
+        <div class="site-hero__image absolute top-0 z-0 inset-x-0 w-full h-auto">
             <?php snippet( 'fullimage', array('image' => $hero) ); ?>
         </div>
         <?php endif; ?>

@@ -1,0 +1,25 @@
+Title: Blog post 2
+
+----
+
+Date: 2020-02-29
+
+----
+
+Tags: Tag 2
+
+----
+
+Text: Lorem ipsum dolor sit amet, vix sint dolorum an, eu est dissentias disputationi. Viris doctus eos id, eos fabulas deserunt id, dolore tamquam contentiones in cum. Numquam oporteat ullamcorper sit ad, mel mazim aeterno pericula no. Erat civibus explicari cu est, ad soluta putant ius. Nominavi iracundia dignissim in eam, praesent expetenda appellantur ei quo, munere efficiantur pri ut. Corpora senserit scriptorem est at, brute justo senserit per ei, tacimates euripidis constituam ei nec.
+
+----
+
+Headerimage: 
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

@@ -12,6 +12,7 @@ tabs:
                     fields:
                         text:
                             extends: fields/mideditor
+                            label: Content
                         headerimage:
                             extends: fields/image
                             label: Header Image
