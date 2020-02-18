@@ -23,7 +23,7 @@
 
         <?php if ($page->isHomePage()) : ?>
             <h1 class="site-header__title">Wilberg</h1>
-            <h3 class="site-header__subtitle">Für Unna.</h3>
+            <p class="site-header__subtitle">Für Unna.</p>
         <?php else : ?>
             <p class="site-header__title"><a href="<?= $site->url(); ?>">Wilberg</a></p>
             <p class="site-header__subtitle">Für Unna.</p>
