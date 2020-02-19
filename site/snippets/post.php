@@ -1,5 +1,5 @@
-<article class="post">
-    <header class="post__header">
+<article class="post py-6 border-wilberg-main border-b-2">
+    <header class="post__header font-bold text-lg leading-tight">
         <h3>
             <a href="<?= $post->url(); ?>" class=""><?= $post->title(); ?></a>
         </h3>

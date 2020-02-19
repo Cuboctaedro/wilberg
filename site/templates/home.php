@@ -2,27 +2,27 @@
 
 <main>
 
-    <div class="home__main">
+    <div class="home__main flex flex-row flex-wrap py-6 gutter">
 
-        <article class="home__text ">
+        <article class="home__text w-full lg:w-4/5 lg:order-2 gutter">
 
-            <div class="generated">
+            <div class="generated sm:text-lg md:text-xl lg:text-2xl font-thin">
                 <?= $page->text()->kt() ?>
             </div>
             
         </article>
 
-        <div class="home__about">
+        <div class="home__about w-full lg:w-1/5 lg:order-1 gutter">
             <?php snippet('who-am-i'); ?>
         </div>
 
     </div>
     
-    <div class="flex">
+    <div class="flex gutter">
         
-        <div class="col">
+        <div class="w-full lg:w-3/4 gutter">
             
-            <section class="home__sections">
+            <section class="home__sections flex flex-row flex-wrap">
     
                 <?php
                 foreach ( $pages->filterBy('intendedTemplate', 'section') as $section ) {
@@ -44,25 +44,28 @@
 
         </div>
         
-        <div class="col">
+        <div class="w-full lg:w-1/4 gutter">
             
             <div class="home__contact">
                 <?php snippet('contact-us'); ?>
             </div>
             
-            <section class="">
-                <header>
-                    <h2>Kalendar</h2>
+            <section class="border border-wilberg-text">
+                <header class="bg-wilberg-text text-wilberg-main p-3">
+                    <h2 class="text-xl text-center w-full">Kalendar</h2>
                 </header>
                 
-                <?php
-                    foreach ( $pages->find('kalender')->children()->sortBy('date', 'desc')->limit(5) as $event ) {
-                        snippet( 'event', array( 'event' => $event ) );
-                    }
-                ?>
-                
-                <footer>
-                    <a class="" href="<?= $pages->find('kalender')->url(); ?>">Zum Kalender</a>
+                <div class=" p-3">
+                    <?php
+                        foreach ( $pages->find('kalender')->children()->sortBy('date', 'desc')->limit(5) as $event ) {
+                            snippet( 'event', array( 'event' => $event ) );
+                        }
+                    ?>
+
+                </div>
+
+                <footer class="p-3 text-right">
+                    <a class="font-bold uppercase" href="<?= $pages->find('kalender')->url(); ?>">Zum Kalender</a>
                 </footer>
 
             </section>

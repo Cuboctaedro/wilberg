@@ -9,6 +9,7 @@
     <link rel="canonical" href="<?= $page->url() ?>"/>
 
     <?php snippet('meta');?>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i,700,900&display=swap" rel="stylesheet">
 
     <?= mix('/app.css') ?>
 </head>
@@ -21,7 +22,7 @@
         
         <?php snippet('nav/nested'); ?>
 
-        <div class="site-hero__title site-header relative z-10 w-full pt-8 px-4">
+        <div class="site-hero__title site-header absolute z-10 w-full pt-8 px-4">
 
             <div class="site-hero__background absolute z-0 h-12 inset-x-0 top-0 "></div>
 
@@ -45,7 +46,7 @@
             $hero = false;
         }
         if ( $hero ) : ?>
-        <div class="site-hero__image absolute top-0 z-0 inset-x-0 w-full h-auto">
+        <div class="site-hero__image relative top-0 z-0 w-full h-auto">
             <?php snippet( 'fullimage', array('image' => $hero) ); ?>
         </div>
         <?php endif; ?>

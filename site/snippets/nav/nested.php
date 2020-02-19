@@ -5,14 +5,14 @@ if ($menu->isNotEmpty()) :
 
 <nav class="main-menu w-full fixed z-20">
 
-    <button class="menutoggle flex flex-col items-center justify-center bg-wilberg-text p-2 absolute" aria-label="Menü" id="menutoggle" aria-expanded="false" aria-controls="mainmenu">
+    <button class="menutoggle flex flex-col items-center justify-center bg-wilberg-text p-2 absolute z-20" aria-label="Menü" id="menutoggle" aria-expanded="false" aria-controls="mainmenu">
         <span class="text-wilberg-main text-center uppercase mb-2">Menü</span>
         <span class="rounded-full bg-wilberg-main w-2 h-2 mb-2"></span>
         <span class="rounded-full bg-wilberg-main  w-2 h-2 mb-2"></span>
         <span class="rounded-full bg-wilberg-main  w-2 h-2"></span>
     </button>
 
-    <ul class="main-menu__list top-0 right-0 bg-wilberg-text text-white overflow-hidden" id="mainmenu">
+    <ul class="main-menu__list absolute z-10 bg-wilberg-text text-white overflow-hidden" id="mainmenu">
     <?php foreach($menu as $item): ?>
         <?php if ($menu_item = $item->main()->toPage()) : ?>
 

@@ -1,6 +1,6 @@
-<article class="event event--<?= $event->subject()->toPage()->slug(); ?>">
-    <header class="event__header">
-        <a href="<?= $event->url(); ?>">
+<article class="event  mb-6">
+    <header class="event__header font-bold text-lg leading-tight">
+        <a href="<?= $event->url(); ?>" class="text-wilberg-<?= $event->subject()->toPage()->sectionid(); ?> ">
             <time datetime="<?= $event->date()->toDate(); ?>"><?= $event->date()->toDate('d.m.Y'); ?></time>
             <h3><?= $event->title(); ?></h3>
         </a>
