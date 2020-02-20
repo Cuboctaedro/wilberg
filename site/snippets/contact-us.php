@@ -1,4 +1,6 @@
 <div class="contact-us">
-    <img src="" />
-    <a href="<?= $pages->find('kontakt')->url(); ?>" class="">Schreiben Sie uns!</a>
+    <a href="<?= $pages->find('kontakt')->url(); ?>" class="">
+        <img src="<?= $kirby->url('assets'); ?>/images/wilberg-contact.png" />
+        <div class="mb-6 bg-wilberg-main text-white font-bold text-xl text-center p-4">Schreiben Sie uns!</span>
+    </a>
 </div>

@@ -46,7 +46,7 @@
             $hero = false;
         }
         if ( $hero ) : ?>
-        <div class="site-hero__image relative top-0 z-0 w-full h-auto">
+        <div class="site-hero__image relative top-0 z-0 w-full h-screen">
             <?php snippet( 'fullimage', array('image' => $hero) ); ?>
         </div>
         <?php endif; ?>

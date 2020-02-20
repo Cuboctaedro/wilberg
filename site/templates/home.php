@@ -2,7 +2,7 @@
 
 <main>
 
-    <div class="home__main flex flex-row flex-wrap py-6 gutter">
+    <div class="home__main flex flex-row flex-wrap py-6 gutter container mx-auto">
 
         <article class="home__text w-full lg:w-4/5 lg:order-2 gutter">
 
@@ -18,7 +18,7 @@
 
     </div>
     
-    <div class="flex gutter">
+    <div class="flex gutter container mx-auto">
         
         <div class="w-full lg:w-3/4 gutter">
             
