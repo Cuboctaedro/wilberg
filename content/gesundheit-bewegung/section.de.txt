@@ -6,7 +6,9 @@ Text: Ecum laceatis as maximax imaxim nosanihillut modiorero tota dolu esto quas
 
 ----
 
-Headerimage: 
+Headerimage:
+
+- dsc03870.jpg
 
 ----
 

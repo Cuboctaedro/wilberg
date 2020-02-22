@@ -1,15 +1,36 @@
-<article class="section w-full md:w-1/3 bg-wilberg-<?= $section->sectionid(); ?>">
-    <header class="section__header p-6">
-        <?php snippet('svg/' . $section->sectionid() . '.svg' ); ?>
-        <h2 class="pt-4 text-xl text-center font-bold leading-tight"><?= $section->title(); ?></h2>
-    </header>
-    <div class="section__content w-0 h-0 overflow-hidden">
 
-    <?php if ($section->headerimage()->exists() && $section->headerimage()->isNotEmpty() ) : ?>
-        <img src="<?= $section->headerimage()->toFile()->url(); ?>" class="" />
-    <?php endif; ?>
+<h2 class=" w-full md:w-1/3 <?php e( intval($i) < 3, 'md:order-4' . strval(intval($i) + 1),  'md:order-' . strval(intval($i) + 5) );?>">
+
+    <button 
+        class="section-tab__header p-6 w-full h-full flex flex-col bg-wilberg-<?= $section->sectionid(); ?> hover:bg-wilberg-<?= $section->sectionid(); ?>_light "
+        aria-controls="content-<?= $section->sectionid(); ?>" 
+        aria-expanded="false" 
+        tabindex="0" 
+        id="heading-<?= $section->sectionid(); ?>" 
+        aria-selected="false"
+    >
+        <?php snippet('svg/' . $section->sectionid() . '.svg' ); ?>
+        <span class="block pt-4 w-full text-xl text-center font-bold leading-tight"><?= $section->title(); ?></span>
+    </button>
+
+</h2>
+
+<div 
+    class="section-tab__content w-full bg-wilberg-<?= $section->sectionid(); ?> <?php e(  intval($i) < 3, 'md:order-' . strval(intval($i) + 3),  'md:order-7' );?>" 
+    id="content-<?= $section->sectionid(); ?>"
+    role="region" 
+    aria-hidden="true" 
+    aria-labelledby="heading-<?= $section->sectionid(); ?>"
+>
+    <div class="p-6">
+        <?php if ($section->headerimage()->exists() && $section->headerimage()->isNotEmpty() ) : ?>
+            <img src="<?= $section->headerimage()->toFile()->url(); ?>" class="block mb-4 lazyload" />
+        <?php endif; ?>
+
         <div class="generated">
             <?= $section->text()->kt(); ?>
         </div>
+
     </div>
-</article>
+
+</div>

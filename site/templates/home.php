@@ -2,7 +2,7 @@
 
 <main>
 
-    <div class="home__main flex flex-row flex-wrap py-6 gutter container mx-auto">
+    <div class="home__main flex  flex-row flex-wrap py-6 gutter container mx-auto">
 
         <article class="home__text w-full lg:w-4/5 lg:order-2 gutter">
 
@@ -18,15 +18,17 @@
 
     </div>
     
-    <div class="flex gutter container mx-auto">
+    <div class="flex flex-wrap gutter container mx-auto">
         
         <div class="w-full lg:w-3/4 gutter">
             
             <section class="home__sections flex flex-row flex-wrap">
     
                 <?php
+                $i = 0;
                 foreach ( $pages->filterBy('intendedTemplate', 'section') as $section ) {
-                    snippet( 'section', array( 'section' => $section ) );
+                    snippet( 'section', array( 'section' => $section, 'i' => $i ) );
+                    $i = $i + 1;
                 }
                 ?>
 

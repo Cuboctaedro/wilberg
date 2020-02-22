@@ -5,7 +5,8 @@ mix.setPublicPath("assets")
 mix.browserSync("kirby-starter.test")
 mix
     .sourceMaps()
-    .js("src/js/app.js", "assets")
+    // .js("src/js/app.js", "assets")
+    .ts("src/js/app.ts", "assets")
     .copyDirectory("src/images", "assets/images")
     .copyDirectory("src/fonts", "assets/fonts")
     .postCss('src/css/app.css', 'assets', [

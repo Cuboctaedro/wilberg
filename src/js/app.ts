@@ -1,7 +1,5 @@
 import 'lazysizes';
 
-import h from "./helpers";
-
 const body = document.querySelector('body');
 
 const menuToggle = document.querySelector('#menutoggle');
@@ -22,6 +20,8 @@ menuToggle.addEventListener(
 
 
 class Tab {
+    button: ''
+    content: ''
     constructor(button, content) {
       this.button = button;
       this.content = content;

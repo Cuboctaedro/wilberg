@@ -151,3 +151,17 @@ svg {
 .contact-us {
     margin-top: -13%;
 }
+
+.section-tab__header {
+    transition: background-color 300ms ease;
+}
+
+.section-tab__content {
+    --height: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 400ms ease-in;
+}
+.section-tab__content.is-open {
+    height: var(--height);
+}

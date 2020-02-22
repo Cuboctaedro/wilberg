@@ -26,6 +26,8 @@
         "sass": "^1.17.3",
         "sass-loader": "^7.1.0",
         "tailwindcss": "^1.0.2",
+        "ts-loader": "^6.2.1",
+        "typescript": "^3.8.2",
         "vue-template-compiler": "^2.6.10"
     }
 }
