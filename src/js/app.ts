@@ -21,8 +21,6 @@ menuToggle.addEventListener(
 
 class Tab {
 
-    // button: Element;
-    // content: Element;
     constructor(public button: HTMLElement, public content: HTMLElement) {
       this.button = button;
       this.content = content;
@@ -51,32 +49,60 @@ class Tab {
     }
 }
 
-  
-const tabHeaders = document.querySelectorAll('.section-tab__header');
+class Tabs {
+    constructor (public tabList: Tab[] ) {
+        this.tabList = tabList
+    }
+    
+    getOpenTab() {
+        return this.tabList.find( tab => tab.isOpen() == 'true' );
+    }
+    
+    hasOpenTab() {
+        if (this.getOpenTab() != undefined ) {
+            return true;
+        }
+        return false;
+    }
+    
+    toggleTab(tab: Tab) {
+        if (tab === this.getOpenTab() ) {
+            tab.close();
+            
+        } else {
+            tab.open();
+            this.tabList.forEach(otherTab => {
+                if (otherTab != tab) {
+                    otherTab.close();
+                }
+            })
+        }
+    }
 
-const sectionTabs = Array.from(tabHeaders).map( (tabHeader) => {
+    openTab(tab: Tab) {
+        if ( !this.hasOpenTab() ) {
+            tab.open();
+        } else {
+            this.toggleTab(tab);
+        }
+    }
+    
+    init() {
+        this.tabList.forEach( tab => {
+            tab.setHeight();
+            tab.button.addEventListener(
+                'click',
+                () => this.toggleTab(tab),
+                false
+            );
+        })
+    }
+}
+
+
+const sectionTabs = new Tabs( Array.from( document.querySelectorAll('.section-tab__header') ).map( (tabHeader) => {
     let tabContent = document.querySelector('#' + tabHeader.getAttribute('aria-controls'));
     return new Tab(<HTMLElement>tabHeader, <HTMLElement>tabContent)
-});
+}) );
 
-
-sectionTabs.forEach(tab => {
-    tab.setHeight();
-    tab.button.addEventListener(
-        'click',
-        () => {
-            if (tab.isOpen() == 'true') {
-                tab.close();
-            } else {
-                tab.open();
-                sectionTabs.forEach(otherTab => {
-                    if (otherTab != tab) {
-                        otherTab.close();
-                    }
-                })
-            }
-        },
-        false
-    );
-});
-
+sectionTabs.init();
