@@ -9,10 +9,10 @@ menuToggle.addEventListener(
     function(event) {
         if (body.classList.contains('menu-open')) {
             body.classList.remove('menu-open');
-            menuToggle.setAttribute('aria-expanded', false);
+            menuToggle.setAttribute('aria-expanded', 'false');
         } else {
             body.classList.add('menu-open');
-            menuToggle.setAttribute('aria-expanded', true);
+            menuToggle.setAttribute('aria-expanded', 'true');
         }
     },
     false
@@ -20,9 +20,10 @@ menuToggle.addEventListener(
 
 
 class Tab {
-    button: ''
-    content: ''
-    constructor(button, content) {
+
+    // button: Element;
+    // content: Element;
+    constructor(public button: HTMLElement, public content: HTMLElement) {
       this.button = button;
       this.content = content;
     }
@@ -37,16 +38,16 @@ class Tab {
 
     open() {
         this.content.classList.add('is-open');
-        this.content.setAttribute('aria-hidden', false);
-        this.button.setAttribute('aria-expanded', true);
-        this.button.setAttribute('aria-selected', true);
+        this.content.setAttribute('aria-hidden', 'false');
+        this.button.setAttribute('aria-expanded', 'true');
+        this.button.setAttribute('aria-selected', 'true');
     }
 
     close() {
         this.content.classList.remove('is-open');
-        this.content.setAttribute('aria-hidden', true);
-        this.button.setAttribute('aria-expanded', false);
-        this.button.setAttribute('aria-selected', false);
+        this.content.setAttribute('aria-hidden', 'true');
+        this.button.setAttribute('aria-expanded', 'false');
+        this.button.setAttribute('aria-selected', 'false');
     }
 }
 
@@ -55,7 +56,7 @@ const tabHeaders = document.querySelectorAll('.section-tab__header');
 
 const sectionTabs = Array.from(tabHeaders).map( (tabHeader) => {
     let tabContent = document.querySelector('#' + tabHeader.getAttribute('aria-controls'));
-    return new Tab(tabHeader, tabContent)
+    return new Tab(<HTMLElement>tabHeader, <HTMLElement>tabContent)
 });
 
 
