@@ -12,6 +12,9 @@ tabs:
                     fields:
                         text:
                             extends: fields/fulleditor
+                        portraitimage:
+                            extends: fields/image
+                            label: Portrait Image
                         vita:
                             type: structure
                             label: CV

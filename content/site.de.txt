@@ -72,3 +72,9 @@ Mainmenu:
 ----
 
 Footermenu: 
+
+----
+
+Defaultheaderimage:
+
+- wilberg-home.jpg

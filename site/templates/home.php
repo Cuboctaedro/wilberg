@@ -4,7 +4,7 @@
 
     <div class="home__main flex  flex-row flex-wrap py-6 gutter container mx-auto">
 
-        <article class="home__text w-full lg:w-4/5 lg:order-2 gutter">
+        <article class="home__text w-full lg:w-4/5 lg:order-2 gutter mb-6 lg:mb-0">
 
             <div class="generated sm:text-lg md:text-xl lg:text-2xl font-thin">
                 <?= $page->text()->kt() ?>

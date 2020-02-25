@@ -1,9 +1,11 @@
-<section class="events">
+<?php snippet('header') ?>
+
+<main>
+
+<section class="events__main flex flex-row flex-wrap py-6 gutter container mx-auto">
     
-    <header class="events__header">
-        <h1><?= $page->title(); ?></h1>
-        <h2><?= $page->title(); ?></h2>
-    </header>
+    <?php snippet( 'page-header', array('page'=> $page) ); ?>
+
     <div class="events__intro">
         <?= $page->intro()->kt(); ?>
     </div>
@@ -11,21 +13,23 @@
     <div class="events__list">
         
         <?php foreach ($page->children() as $event ): ?>
+
+            <?php $event_color = $event->subject()->toPage()->sectionid(); ?>
         
         <article class="
-        event 
-        event--<?= $event->subject()->toPage()->slug(); ?> 
+        event border-t-2 border-solid border-wilberg-text pt-4 pb-6 
+        event--<?= $event_color; ?> 
         <?php e($event->kinder()->toBool(), ' event--kinder'); ?>
         <?php e($event->freiluft()->toBool(), ' event--freiluft'); ?>
         ">
             <header class="event__header">
-                <time datetime="<?= $event->date()->toDate(); ?>"><?= $event->date()->toDate('d.m.Y'); ?></time>
-                <h2>
-                    <a href="<?= $event->url(); ?>" class=""><?= $event->title(); ?></a>
+                <time datetime="<?= $event->date()->toDate(); ?>" class="bg-wilberg-<?= $event_color; ?> py-1 px-2 text-white font-bold text-sm xl:text-base inline-block"><?= $event->date()->toDate('d.m.Y'); ?></time>
+                <h2 class="w-full font-bold text-lg xl:text-xl">
+                    <a href="<?= $event->url(); ?>" class="text-wilberg-<?= $event_color; ?>"><?= $event->title(); ?></a>
                 </h2>
-                <p><?= $event->location(); ?></p>
+                <p class="mb-3 italic"><?= $event->location(); ?></p>
             </header>
-            <div class="">
+            <div class="text-base xl:text-lg">
                 <?= $event->text()->kt(); ?>
             </div>
         </article>
@@ -34,3 +38,7 @@
     </div>
 
 </section>
+
+</main>
+
+<?php snippet('footer'); ?>
