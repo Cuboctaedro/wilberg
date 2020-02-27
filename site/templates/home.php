@@ -34,7 +34,7 @@
 
             </section>
 
-            <section class="home__blog">
+            <section class="home__blog mb-12 lg:mb-0">
                 
                 <?php
                 foreach ( $pages->find('blog')->children()->sortBy('date', 'desc')->limit(5) as $post ) {
@@ -46,18 +46,18 @@
 
         </div>
         
-        <div class="w-full lg:w-1/4 gutter">
+        <div class="w-full lg:w-1/4 flex flex-row flex-wrap">
             
-            <div class="home__contact">
+            <div class="home__contact w-full sm:w-1/2 md:w-1/3 lg:w-full gutter">
                 <?php snippet('contact-us'); ?>
             </div>
             
-            <section class="border border-wilberg-text">
+            <section class=" w-full sm:w-1/2 md:w-2/3 lg:w-full gutter ">
                 <header class="bg-wilberg-text text-wilberg-main p-3">
                     <h2 class="text-xl text-center w-full">Kalendar</h2>
                 </header>
                 
-                <div class=" p-3">
+                <div class="border-l border-r border-wilberg-text p-3">
                     <?php
                         foreach ( $pages->find('kalender')->children()->sortBy('date', 'desc')->limit(5) as $event ) {
                             snippet( 'event', array( 'event' => $event ) );
@@ -66,7 +66,7 @@
 
                 </div>
 
-                <footer class="p-3 text-right">
+                <footer class="p-3 text-right border-l border-b border-r border-wilberg-text">
                     <a class="font-bold uppercase" href="<?= $pages->find('kalender')->url(); ?>">Zum Kalender</a>
                 </footer>
 

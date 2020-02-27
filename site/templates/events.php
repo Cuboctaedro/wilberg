@@ -6,11 +6,11 @@
     
     <?php snippet( 'page-header', array('page'=> $page) ); ?>
 
-    <div class="events__intro">
+    <div class="events__intro gutter">
         <?= $page->intro()->kt(); ?>
     </div>
     
-    <div class="events__list">
+    <div class="events__list gutter">
         
         <?php foreach ($page->children() as $event ): ?>
 

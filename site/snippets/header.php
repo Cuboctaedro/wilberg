@@ -27,11 +27,11 @@
             <div class="site-hero__background absolute z-0 h-12 inset-x-0 top-0 "></div>
 
             <?php if ($page->isHomePage()) : ?>
-                <h1 class="relative z-10 text-wilberg-main uppercase text-3xl sm:text-4xl lg:text-7xl leading-none tracking-widest font-black">Wilberg:</h1>
-                <p class="relative z-10 text-2xl sm:text-3xl lg:text-5xl leading-none">Für Unna.</p>
+                <h1 class="relative z-10 text-wilberg-main uppercase text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-none tracking-widest font-black">Wilberg:</h1>
+                <p class="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-none">Für Unna.</p>
             <?php else : ?>
-                <p class="relative z-10 text-wilberg-main uppercase text-7xl leading-none tracking-widest font-black"><a href="<?= $site->url(); ?>">Wilberg</a></p>
-                <p class="relative z-10 text-5xl leading-none">Für Unna.</p>
+                <p class="relative z-10 text-wilberg-main uppercase text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-none tracking-widest font-black"><a href="<?= $site->url(); ?>">Wilberg</a></p>
+                <p class="relative z-10 text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-none">Für Unna.</p>
             <?php endif; ?>
 
         </div>
