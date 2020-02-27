@@ -24,16 +24,44 @@
 
         </div>
 
-        <div class="flex flex-row flex-wrap py-6 gutter container mx-auto">
+        <div class="w-full bg-wilberg-main">
 
-            <div class="w-full lg:w-3/4 gutter">
+            <div class="flex flex-row flex-wrap py-6 gutter container mx-auto">
 
-            </div>
-            <div class="w-full lg:w-1/4 gutter">
+                <div class="w-full lg:w-3/4 gutter">
+                    <?php if ( $page->vita()->isNotEmpty() ): ?>
 
-            </div>
+                        <?php foreach( $page->vita()->toStructure() as $entry ) : ?>
 
-        </div> 
+                            <div class="flex flex-row items-baseline pb-1">
+                                <div class="text-base text-white w-32 flex-none"><?= $entry->date(); ?></div>
+                                <div class="text-base xl:text-lg text-wilberg-text"><?= $entry->contents()->kt(); ?></div>
+                            </div>
+
+                         <?php endforeach; ?>
+
+                    <?php endif; ?>
+
+                </div>
+
+                <div class="w-full lg:w-1/4 gutter">
+
+                    <?php if ( $page->vitaimages()->isNotEmpty() ): ?>
+
+                        <?php foreach( $page->vitaimages()->toFiles() as $pic ) : ?>
+
+                            <img src="<?= $pic->url(); ?>" class="block w-full mb-6" />
+
+                        <?php endforeach; ?>
+
+                    <?php endif; ?>
+
+                </div>
+
+            </div> 
+
+        </div>
+
     </article>
 
 </main>

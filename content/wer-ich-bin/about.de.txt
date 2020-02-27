@@ -2,12 +2,69 @@ Title: Wer ich bin
 
 ----
 
-Text: 
+Subtitle: Lebenslauf, Ziele, Persönliches
 
 ----
 
-Featuredimage: 
+Text:
+
+**Meine Stadt. Unna.**
+Ecum laceatis as maximax imaxim nosanihillut modiorero tota dolu esto quas remquatur ab illaborit quamus, vendaec nus, aut porum faciatet qui cum quatur nihiliqui sinciaspe con consequo cone porum faciate. Ecum laceatis as maximax imaxim nosanihillut modiorero tota dolu esto quas remquatur ab illaborit quamus, cone porum faciate.
+
+**Wir schlagen ein neues Kapitel!**
+
+----
+
+Portraitimage:
+
+- img_7118.jpg
+
+----
+
+Vitaimages:
+
+- img_7095.jpg
+- img_7129.jpg
+- img_7123.jpg
+
+----
+
+Vita:
+
+- 
+  date: Seit 2017
+  contents: >
+    Mitglied des Deutschen Bundestages
+    Mitglied im Auswärtigen Ausschuss
+    Mitglied im Kuratorium des „Fonds zur Finanzierung der kerntechnischen Entsorgung“ (Entsorgungsfonds)
+- 
+  date: 2015-2016
+  contents: >
+    Ko-Vorsitzender der Kommission zur Finanzierung des Kernausstiegs
+- 
+  date: '2014 - 2017'
+  contents: >
+    Stellv. Mitglied im Ausschuss für Europäische Angelegenheiten, Stellv.
+    Mitglied im Ausschuss für Wirtschaft und Energie
+
+----
+
+Headerimage:
+
+- img_7097.jpg
+
+----
+
+Downloads: 
 
 ----
 
 Description: 
+
+----
+
+Authortwitter: 
+
+----
+
+Featuredimage: 

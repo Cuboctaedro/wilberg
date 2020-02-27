@@ -1,5 +1,3 @@
-label:
-    en: Gallery
-    el: Συλλογή εικόνων
+label: Gallery
 type: files
 layout: list

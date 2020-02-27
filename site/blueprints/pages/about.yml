@@ -10,11 +10,20 @@ tabs:
                 content:
                     type: fields
                     fields:
+                        subtitle:
+                            type: text
+                            label: Subtitle
                         text:
-                            extends: fields/fulleditor
+                            extends: fields/mideditor
+                            label: Text
                         portraitimage:
                             extends: fields/image
                             label: Portrait Image
+                            width: 1/2
+                        vitaimages:
+                            extends: fields/gallery
+                            label: CV Images
+                            width: 1/2
                         vita:
                             type: structure
                             label: CV
@@ -22,7 +31,7 @@ tabs:
                                 date:
                                     type: text
                                     label: Date
-                                content:
+                                contents:
                                     extends: fields/plaineditor 
                                     label: Text
                         headerimage:
