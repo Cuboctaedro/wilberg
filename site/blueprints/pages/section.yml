@@ -10,12 +10,19 @@ tabs:
                 content:
                     type: fields
                     fields:
-                        text:
-                            extends: fields/mideditor
-                            label: Content
+                        subtitle:
+                            type: text
+                            label: Subtitle
+                        featuredimage:
+                            extends: fields/image
+                            label: Featured Image
+                            width: 1/2
                         headerimage:
                             extends: fields/image
                             label: Header Image
+                            width: 1/2
+                        text:
+                            extends: fields/mideditor
                         sectionid:
                             type: hidden
 

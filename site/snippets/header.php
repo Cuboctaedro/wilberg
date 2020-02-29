@@ -1,25 +1,26 @@
 <!doctype html>
 <html lang="de">
+
 <head>
-    <title><?= e(!$page->isHomePage(), $page->title(). ' | ' , '') ?><?= $site->title() ?></title>
-    <meta name="Description" content="<?= $page->metadescription()?>">
+    <title><?= e(!$page->isHomePage(), $page->title() . ' | ', '') ?><?= $site->title() ?></title>
+    <meta name="Description" content="<?= $page->metadescription() ?>">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="<?= $page->url() ?>"/>
+    <link rel="canonical" href="<?= $page->url() ?>" />
 
-    <?php snippet('meta');?>
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i,700,900&display=swap" rel="stylesheet">
+    <?php snippet('meta'); ?>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,400i,700,900&display=swap" rel="stylesheet">
 
     <?= mix('/app.css') ?>
 </head>
 
-<body class="font-sans text-base text-wilberg-text bg-white " >
+<body class="font-sans text-base text-wilberg-text bg-white ">
 
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-hero relative">
-        
+
         <?php snippet('nav/nested'); ?>
 
         <div class="site-hero__title site-header absolute z-10 w-full pt-8 px-4">
@@ -37,7 +38,7 @@
         </div>
 
 
-        <?php 
+        <?php
         if ($page->headerimage()->exists() && $page->headerimage()->isNotEmpty()) {
             $hero = $page->headerimage()->toFile();
         } elseif ($site->defaultheaderimage()->exists() && $site->defaultheaderimage()->isNotEmpty()) {
@@ -45,10 +46,10 @@
         } else {
             $hero = false;
         }
-        if ( $hero ) : ?>
-        <div class="site-hero__image relative top-0 z-0 w-full h-screen">
-            <?php snippet( 'fullimage', array('image' => $hero) ); ?>
-        </div>
+        if ($hero) : ?>
+            <div class="site-hero__image relative top-0 z-0 w-full h-screen">
+                <?php snippet('fullimage', array('image' => $hero)); ?>
+            </div>
         <?php endif; ?>
 
     </header>

@@ -13,12 +13,16 @@ tabs:
                         subtitle:
                             type: text
                             label: Subtitle
-                        intro:
-                            extends: fields/mideditor
-                            label: Intro
+                        featuredimage:
+                            extends: fields/image
+                            label: Featured Image
+                            width: 1/2
                         headerimage:
                             extends: fields/image
                             label: Header Image
+                            width: 1/2
+                        text:
+                            extends: fields/mideditor
                 publishedevents:
                     headline: Published Events
                     type: pages

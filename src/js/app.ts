@@ -89,7 +89,7 @@ class Tabs {
     
     init() {
         this.tabList.forEach( tab => {
-            tab.setHeight();
+            // tab.setHeight();
             tab.button.addEventListener(
                 'click',
                 () => this.toggleTab(tab),

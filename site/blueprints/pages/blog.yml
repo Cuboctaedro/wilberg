@@ -2,13 +2,28 @@ title: Blog Page
 
 tabs:
     content:
-        label:
-            en: Content
-            el: Περιεχόμενο
+        label: Content
         icon: text
         columns:
           - width: 2/3
             sections:
+                content:
+                    type: fields
+                    fields:
+                         subtitle:
+                            type: text
+                            label: Subtitle
+                        featuredimage:
+                            extends: fields/image
+                            label: Portrait Image
+                            width: 1/2
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
+                            width: 1/2
+                        text:
+                            extends: fields/mideditor
+                            label: Text
                 blog:
                     headline: Articles
                     type: pages

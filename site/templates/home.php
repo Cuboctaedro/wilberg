@@ -46,7 +46,7 @@
 
         </div>
         
-        <div class="w-full lg:w-1/4 flex flex-row flex-wrap">
+        <div class="w-full lg:w-1/4 flex flex-row flex-wrap lg:block">
             
             <div class="home__contact w-full sm:w-1/2 md:w-1/3 lg:w-full gutter">
                 <?php snippet('contact-us'); ?>

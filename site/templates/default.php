@@ -1,18 +1,25 @@
 <?php snippet('header') ?>
 
-<article class="container gutter ">
-    <header class="gutter mb-12">
-        <h1 class="heading-1"><?= $page->title() ?></h1>
-    </header>
-    <div class="flex flex-row flex-wrap">
-        <div class="w-full lg:w-1/2 gutter generated mb-12">
-            <?= $page->text()->kt() ?>
-        </div>
-        <div class="w-full lg:w-1/2 flex flex-row flex-wrap mb-8">
-            <?php snippet('gallery'); ?>
+<main>
+
+    <article>
+        <div class="about__main flex flex-row flex-wrap py-6 gutter container mx-auto">
+
+            <?php snippet('page-header', array('page' => $page)); ?>
+
+            <div class="w-full lg:w-1/2 gutter mb-6 lg:mb-0">
+
+            </div>
+            <div class="w-full lg:w-1/2 gutter">
+
+                <div class="generated sm:text-lg md:text-xl lg:text-2xl font-thin">
+                    <?= $page->text()->kt() ?>
+                </div>
+
+            </div>
+
         </div>
 
-    </div>
-</article>
+    </article>
 
 <?php snippet('footer'); ?>

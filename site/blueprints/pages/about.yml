@@ -13,17 +13,17 @@ tabs:
                         subtitle:
                             type: text
                             label: Subtitle
-                        text:
-                            extends: fields/mideditor
-                            label: Text
-                        portraitimage:
+                        featuredimage:
                             extends: fields/image
                             label: Portrait Image
                             width: 1/2
-                        vitaimages:
-                            extends: fields/gallery
-                            label: CV Images
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
                             width: 1/2
+                        text:
+                            extends: fields/mideditor
+                            label: Text
                         vita:
                             type: structure
                             label: CV
@@ -34,13 +34,15 @@ tabs:
                                 contents:
                                     extends: fields/plaineditor 
                                     label: Text
-                        headerimage:
-                            extends: fields/image
-                            label: Header Image
+                        vitaimages:
+                            extends: fields/gallery
+                            label: CV Images
+                            width: 1/2
                         downloads:
                             type: files
                             layout: list
                             label: Downloads
+                            width: 1/2
 
           - width: 1/3
             sections:

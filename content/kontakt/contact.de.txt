@@ -2,7 +2,7 @@ Title: Kontakt
 
 ----
 
-Text: 
+Subtitle: Ich freue mich auf Sie!
 
 ----
 
@@ -10,4 +10,22 @@ Featuredimage:
 
 ----
 
+Headerimage:
+
+- img_7118.jpg
+
+----
+
+Text:
+
+Ihr Anliegen ist mir wichtig!
+Ecum laceatis as maximax imaxim nosanihillut modiorero tota dolu esto quas remquatur ab illaborit quamus, vendaec nus, aut porum faciatet qui cum quatur nihiliqui sinciaspe con consequo cone porum faciate.
+Wir schlagen ein neues Kapitel!
+
+----
+
 Description: 
+
+----
+
+Authortwitter: 

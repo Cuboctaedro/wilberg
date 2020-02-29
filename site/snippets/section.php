@@ -23,14 +23,13 @@
     aria-labelledby="heading-<?= $section->sectionid(); ?>"
 >
     <div class="p-6">
-        <?php if ($section->headerimage()->exists() && $section->headerimage()->isNotEmpty() ) : ?>
-            <img src="<?= $section->headerimage()->toFile()->url(); ?>" class="block mb-4 lazyload" />
+        <?php if ($section->featuredimage()->exists() && $section->featuredimage()->isNotEmpty() ) : ?>
+            <img src="<?= $section->featuredimage()->toFile()->url(); ?>" class="block mb-4 lazyload" />
         <?php endif; ?>
 
         <div class="generated">
             <?= $section->text()->kt(); ?>
         </div>
-
     </div>
 
 </div>

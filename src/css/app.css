@@ -164,10 +164,10 @@ svg {
 
 .section-tab__content {
     --height: 0;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    transition: height 400ms ease-in;
+    transition: max-height 400ms ease;
 }
 .section-tab__content.is-open {
-    height: var(--height);
+    max-height: 1500px;
 }
