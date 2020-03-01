@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main>
+<main class="main" id="main">
 
     <article>
         <div class="contact__main flex flex-row flex-wrap py-6 gutter container mx-auto">
@@ -24,8 +24,8 @@
 
     <section class="anonymous-form gutter container mx-auto mb-6 sm:mb-12">
 
-        <h2 class="text-lg lg:text-xl font-bold mb-4 gutter">Sie können uns anonym und unverbindlich Ihre Anliegen
-            schreiben:</h2>
+        <h2 class="text-lg lg:text-xl xl:text-2xl font-bold mb-4 gutter">Sie können uns anonym und unverbindlich Ihre
+            Anliegen schreiben:</h2>
 
         <div class="gutter">
             <?php snippet('form/anonymous'); ?>
@@ -35,7 +35,8 @@
 
     <section class="contact-form gutter container mx-auto">
 
-        <h2 class="text-lg lg:text-xl font-bold mb-4 gutter">Oder melden Sie sich an und genießen Sie ganz persönliche
+        <h2 class="text-lg lg:text-xl xl:text-2xl font-bold mb-4 gutter">Oder melden Sie sich an und genießen Sie ganz
+            persönliche
             Vorteile:</h2>
 
         <div class="gutter">
@@ -46,4 +47,4 @@
 
 </main>
 
-<?php snippet('footer'); ?>
+<?php snippet('footer');

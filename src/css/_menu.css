@@ -1,0 +1,25 @@
+.menutoggle {
+    top: 2rem;
+    right: 2rem;
+    border: 1px solid;
+    @apply border-wilberg-text;
+}
+.menu-open .menutoggle {
+    @apply border-wilberg-main;
+}
+.menu-open {
+    overflow-y: hidden;
+}
+
+.main-menu__list {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    transition: height 400ms ease-in-out;
+}
+
+.menu-open .main-menu__list {
+    height: 100vh;
+    overflow-y: scroll;
+}

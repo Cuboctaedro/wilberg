@@ -1,0 +1,47 @@
+.checkbox {
+    display: block;
+    position: relative;
+    padding-right: 2.5rem;
+    cursor: pointer;
+    user-select: none;
+
+    &__input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    &__mark {
+        position: absolute;
+        top: calc(50% - 0.75rem);
+        right: 0;
+        height: 1.5rem;
+        width: 1.5rem;
+        @apply bg-white;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 8px;
+            top: 3px;
+            width: 8px;
+            height: 14px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        input:checked ~ & {
+            @apply bg-wilberg-main;
+            &:after {
+                display: block;
+            }
+        }
+    }
+    & .checkbox__label {
+
+    }
+}

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main>
+<main class="main" id="main">
 
     <article>
         <div class="about__main flex flex-row flex-wrap py-6 gutter container mx-auto">
@@ -21,5 +21,7 @@
         </div>
 
     </article>
+
+</main>
 
 <?php snippet('footer'); ?>

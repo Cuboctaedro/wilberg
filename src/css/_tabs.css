@@ -1,0 +1,13 @@
+.section-tab__header {
+    transition: background-color 300ms ease;
+}
+
+.section-tab__content {
+    --height: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 400ms ease;
+}
+.section-tab__content.is-open {
+    max-height: 1500px;
+}

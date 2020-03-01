@@ -4,27 +4,46 @@ require('laravel-mix-purgecss');
 mix.setPublicPath("assets")
 mix.browserSync("kirby-starter.test")
 mix
-    .sourceMaps()
-    // .js("src/js/app.js", "assets")
-    .ts("src/js/app.ts", "assets")
-    .copyDirectory("src/images", "assets/images")
-    .copyDirectory("src/fonts", "assets/fonts")
-    .postCss('src/css/app.css', 'assets', [
-        require('postcss-import'),
-        require('tailwindcss'),
-        require('postcss-nesting'),
-        require('postcss-custom-properties'),
-
-    ])
-    .options({
-         processCssUrls: false
-    })
-    .purgeCss({
-        folders: ['site/templates', 'site/snippets', 'site/snippets/form', 'site/snippets/nav'],
-        whitelist: ['show']
-
-    })
-    .version()
+  .sourceMaps()
+  // .js("src/js/app.js", "assets")
+  .ts("src/js/app.ts", "assets")
+  .copyDirectory("src/images", "assets/images")
+  .copyDirectory("src/fonts", "assets/fonts")
+  .postCss("src/css/app.css", "assets", [
+    require("postcss-import"),
+    require("tailwindcss"),
+    require("postcss-nested"),
+    require("postcss-custom-properties")
+  ])
+  .options({
+    processCssUrls: false
+  })
+  .purgeCss({
+    folders: [
+      "site/templates",
+      "site/snippets",
+      "site/snippets/form",
+      "site/snippets/image",
+      "site/snippets/nav"
+    ],
+    whitelistPatterns: [
+      /digital$/,
+      /digital_light$/,
+      /gesund$/,
+      /gesund_light$/,
+      /integration$/,
+      /integration_light$/,
+      /wohnraum$/,
+      /wohnraum_light$/,
+      /wirtschaft$/,
+      /wirtschaft_light$/,
+      /verkehr$/,
+      /verkehr_light$/,
+      /order-/
+    ],
+    whitelist: ["menu-open", "is-open"]
+  })
+  .version();
 
 
 /*

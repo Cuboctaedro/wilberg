@@ -1,0 +1,49 @@
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+.uniform__potty,
+.honeypot-field {
+    position: absolute;
+    left: -9999px;
+}
+
+[hidden] {
+  display: none;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
+::selection {
+    @apply bg-red-200 ;
+}
+::-moz-selection {
+    @apply bg-red-200 ;
+}
+
+svg {
+    fill: currentColor;
+}

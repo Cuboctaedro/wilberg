@@ -4,7 +4,8 @@
     "main": "index.js",
     "license": "MIT",
     "dependencies": {
-        "lazysizes": "^5.1.0"
+        "lazysizes": "^5.1.0",
+        "postcss-nested": "^4.2.1"
     },
     "scripts": {
         "dev": "npm run development",
@@ -22,7 +23,6 @@
         "laravel-mix-purgecss": "^4.1.0",
         "postcss-custom-properties": "^9.0.1",
         "postcss-import": "^12.0.1",
-        "postcss-nesting": "^7.0.0",
         "prettier": "^1.19.1",
         "sass": "^1.17.3",
         "sass-loader": "^7.1.0",

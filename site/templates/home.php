@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main>
+<main class="main" id="main">
 
     <div class="home__main flex  flex-row flex-wrap py-6 gutter container mx-auto">
 
@@ -9,7 +9,7 @@
             <div class="generated sm:text-lg md:text-xl lg:text-2xl font-thin">
                 <?= $page->text()->kt() ?>
             </div>
-            
+
         </article>
 
         <div class="home__about w-full lg:w-1/5 lg:order-1 gutter">
@@ -17,17 +17,17 @@
         </div>
 
     </div>
-    
+
     <div class="flex flex-wrap gutter container mx-auto">
-        
+
         <div class="w-full lg:w-3/4 gutter">
-            
+
             <section class="home__sections flex flex-row flex-wrap">
-    
+
                 <?php
                 $i = 0;
-                foreach ( $pages->filterBy('intendedTemplate', 'section') as $section ) {
-                    snippet( 'section', array( 'section' => $section, 'i' => $i ) );
+                foreach ($pages->filterBy('intendedTemplate', 'section') as $section) {
+                    snippet('section', array('section' => $section, 'i' => $i));
                     $i = $i + 1;
                 }
                 ?>
@@ -35,49 +35,53 @@
             </section>
 
             <section class="home__blog mb-12 lg:mb-0">
-                
+
                 <?php
-                foreach ( $pages->find('blog')->children()->sortBy('date', 'desc')->limit(5) as $post ) {
-                    snippet( 'post', array( 'post' => $post ) );
+                foreach ($pages->find('blog')->children()->sortBy('date', 'desc')->limit(5) as $post) {
+                    snippet('post', array('post' => $post));
                 }
                 ?>
 
             </section>
 
         </div>
-        
+
         <div class="w-full lg:w-1/4 flex flex-row flex-wrap lg:block">
-            
+
             <div class="home__contact w-full sm:w-1/2 md:w-1/3 lg:w-full gutter">
                 <?php snippet('contact-us'); ?>
             </div>
-            
+
             <section class=" w-full sm:w-1/2 md:w-2/3 lg:w-full gutter ">
                 <header class="bg-wilberg-text text-wilberg-main p-3">
-                    <h2 class="text-xl text-center w-full">Kalendar</h2>
+                    <h2 class="w-full">
+                        <a class="flex w-full items-center justify-center" href="<?= $pages->find('kalender')->url(); ?>">
+                            <span class="text-base sm:text-xl xl:text-2xl font-bold">Kalendar</span>
+                            <span class="w-8 h-8"><?php snippet('icons/material/arrow_right'); ?></span>
+                        </a>
+                    </h2>
                 </header>
-                
+
                 <div class="border-l border-r border-wilberg-text p-3">
                     <?php
-                        foreach ( $pages->find('kalender')->children()->sortBy('date', 'desc')->limit(5) as $event ) {
-                            snippet( 'event', array( 'event' => $event ) );
-                        }
+                    foreach ($pages->find('kalender')->children()->sortBy('date', 'desc')->limit(5) as $event) {
+                        snippet('event', array('event' => $event));
+                    }
                     ?>
 
                 </div>
 
                 <footer class="p-3 text-right border-l border-b border-r border-wilberg-text">
-                    <a class="font-bold uppercase" href="<?= $pages->find('kalender')->url(); ?>">Zum Kalender</a>
+                    <a class="flex w-full items-center justify-end" href="<?= $pages->find('kalender')->url(); ?>">
+                        <span class="text-base uppercase font-bold">Zum Kalender</span>
+                        <span class="w-6 h-6"><?php snippet('icons/material/arrow_right'); ?></span>
+                    </a>
                 </footer>
 
             </section>
         </div>
 
     </div>
-
-
-
 </main>
-
 
 <?php snippet('footer'); ?>
