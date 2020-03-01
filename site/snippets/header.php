@@ -19,7 +19,7 @@
 
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-hero relative">
+    <header class="site-hero relative border-wilberg-text border-b-24">
 
         <?php snippet('nav/nested'); ?>
 
@@ -37,7 +37,6 @@
 
         </div>
 
-
         <?php
         if ($page->headerimage()->exists() && $page->headerimage()->isNotEmpty()) {
             $hero = $page->headerimage()->toFile();
@@ -47,8 +46,10 @@
             $hero = false;
         }
         if ($hero) : ?>
-            <div class="site-hero__image relative top-0 z-0 w-full h-screen">
-                <?php snippet('fullimage', array('image' => $hero)); ?>
+            <div class="site-hero__image relative top-0 z-0 w-full flex justify-center items-stretch">
+                <div class="hero-left hidden xl:block w-40 h-full flex-none relative z-20"></div>
+                <?php snippet('image/hero', array('image' => $hero)); ?>
+                <div class="hero-right hidden xl:block w-40 h-full flex-none relative z-20"></div>
             </div>
         <?php endif; ?>
 
