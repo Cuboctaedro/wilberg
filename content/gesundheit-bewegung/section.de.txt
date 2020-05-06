@@ -1,0 +1,34 @@
+Title: Gesundes Leben
+
+----
+
+Subtitle: 
+
+----
+
+Featuredimage:
+
+- dsc03870.jpg
+
+----
+
+Headerimage: 
+
+----
+
+Text:
+
+**Gesundes Leben**
+Gesundheit und Prävention entstehen in der Kommune. Nur wenn hier alle relevanten Akteure an einem Strang ziehen, dann können Menschen auch gesund in ihren Lebenswelten agieren. Alle Akteure sollten daher gemeinsam Konzepte für nachhaltige Prävention entwickeln. Hier sind Dialog und das Moderieren unterschiedlicher Interessen entscheidend. Nur so bekommen wir die Industrie, Wirtschaft und Handwerk, Schulen, Vereine und die Verwaltung an einen Tisch, um Synergieeffekte für die ganze Stadt zu entwickeln. Die Lebenswelten Schule, Beruf, Freizeit und Sport sind elementar für die Gesunderhaltung der Menschen, für sinnvolle Freizeitgestaltung und für ein friedliches Miteinander. Als Bürgermeister bringe ich Menschen im Dialog zusammen.
+
+----
+
+Sectionid: gesund
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

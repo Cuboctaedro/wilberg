@@ -1,0 +1,43 @@
+Title: Event 1
+
+----
+
+Date: 2020-04-02
+
+----
+
+Time: 13:00
+
+----
+
+Subject:
+
+- digitalisierung
+
+----
+
+Location: Berlin
+
+----
+
+Kinder: true
+
+----
+
+Freiluft: false
+
+----
+
+Headerimage: 
+
+----
+
+Text: Lorem ipsum dolor sit amet, ne nam ipsum prodesset intellegebat. Ei diam probatus appellantur sed, summo dicit verterem at eam. Vix ad omnis nulla animal, usu te noster debitis posidonium. Eu euripidis definiebas has. Sea detraxit corrumpit sententiae ne.
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

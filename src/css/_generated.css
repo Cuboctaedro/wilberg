@@ -1,0 +1,42 @@
+.generated {
+    @apply text-base leading-normal ;
+}
+.generated p {
+    @apply mb-4;
+}
+.generated p:last-child {
+    @apply mb-0;
+}
+.generated strong {
+    @apply font-bold;
+}
+.generated a {
+    @apply text-white relative ;
+}
+.generated a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s;
+    transition-timing-function: ease;
+    @apply bg-white ;
+}
+.generated a:hover::after {
+    width: 100%;
+}
+.generated code {
+    @apply text-base ;
+}
+.generated pre {
+    @apply p-4 bg-gray-100 mb-4 ;
+}
+.generated h2 {
+    @apply font-bold mb-3  ;
+}
+.generated h3 {
+    @apply text-base font-bold mb-2 ;
+}

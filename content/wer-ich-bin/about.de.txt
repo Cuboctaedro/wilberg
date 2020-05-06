@@ -1,0 +1,326 @@
+Title: Wer ich bin
+
+----
+
+Subtitle: Lebenslauf, Ziele, Persönliches
+
+----
+
+Featuredimage: 
+
+----
+
+Headerimage:
+
+- img_7097.jpg
+
+----
+
+Text:
+
+**Meine Stadt. Unna.**
+Ecum laceatis as maximax imaxim nosanihillut modiorero tota dolu esto quas remquatur ab illaborit quamus, vendaec nus, aut porum faciatet qui cum quatur nihiliqui sinciaspe con consequo cone porum faciate. Ecum laceatis as maximax imaxim nosanihillut modiorero tota dolu esto quas remquatur ab illaborit quamus, cone porum faciate.
+
+**Wir schlagen ein neues Kapitel!**
+
+----
+
+Vita:
+
+- 
+  itemtype: heading
+  heading: PERSÖNLICHES
+  date: ""
+  contents: ""
+- 
+  itemtype: entry
+  heading: ""
+  date: 20.1.1968 / Dortmund
+  contents: |
+    Geburtsdatum / -ort
+    Familienstand: geschieden, 2 Töchter
+    Staatsangehörigkeit: deutsch
+    Konfession: evangelisch
+- 
+  itemtype: heading
+  heading: AUSBILDUNG
+  date: ""
+  contents: ""
+- 
+  itemtype: ""
+  heading: ""
+  date: '1974 - 1978'
+  contents: >
+    Kardinal-von-Galen-Schule,
+    Lünen-Altlünen
+- 
+  itemtype: ""
+  heading: ""
+  date: '08/1985 - 07/1986'
+  contents: Patrick Henry High School, San Diego
+- 
+  itemtype: ""
+  heading: ""
+  date: bis 05/1989
+  contents: 'Städtische Gymnasium Lünen-Altlünen, Abschluss: Abitur'
+- 
+  itemtype: ""
+  heading: ""
+  date: '06/1989 - 08/1990'
+  contents: >
+    Wehrdienst, Nachschubkompanie Sw 611,
+    Flensburg
+- 
+  itemtype: ""
+  heading: ""
+  date: '09/1990 - 09/1993'
+  contents: >
+    Studium an der Universität Bayreuth,
+    Rechtswissenschaften mit
+    wirtschaftswissenschaftlicher
+    Zusatzausbildung
+- 
+  itemtype: ""
+  heading: ""
+  date: '10/1993 - 08/1999'
+  contents: >
+    Studium an der Deutschen Sporthochschule
+    Köln, Sportwissenschaften mit den
+    Schwerpunkten Publizistik, Volleyball
+    und Segeln, Diplomabschluss
+- 
+  itemtype: heading
+  heading: BERUFSERFAHRUNG
+  date: ""
+  contents: ""
+- 
+  itemtype: ""
+  heading: ""
+  date: 09/2017-08/2019
+  contents: 'Fridtjof Nansen Realschule, Fächer: Sport, Politik, ICT'
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 08/2018
+  contents: 'Hellweg-RealSchule Unna-Massen, Fächer: Sport, Politik'
+- 
+  itemtype: ""
+  heading: ""
+  date: 'seit 2018 '
+  contents: >
+    Koordination Fußball AG und Teilnahme
+    an Schulmeister-schaften im Fußball mit
+    der Hellweg-Realschule Unna-Massen
+- 
+  itemtype: ""
+  heading: ""
+  date: "2019"
+  contents: >
+    Projektkoordination Sponsorenlauf an der
+    Hellweg-Realschule Unna-Massen
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2019
+  contents: |
+    Konzeptarbeit Fachschaft Sport als Wahlpflichtfach
+    Presse- und Öffentlichkeitsarbeit an der Hellweg-Realschule Unna-Massen
+- 
+  itemtype: heading
+  heading: MARKETING/PR
+  date: ""
+  contents: ""
+- 
+  itemtype: ""
+  heading: ""
+  date: 2000-2002
+  contents: >
+    Mitarbeiter der Marketingabteilung und
+    Pressesprecher der Dortmunder
+    Union-Ritter Brauerei
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2001
+  contents: >
+    Coach und Mentor /
+    Existenzgründerberatung bei „start 2
+    grow“ Dortmund
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2003
+  contents: 'Inhaber einer PR- und Event-Agentur in Unna mit lokalen, regionalen und nationalen Kunden'
+- 
+  itemtype: ""
+  heading: ""
+  date: 2003-2005
+  contents: |
+    PR- und Öffentlichkeitsarbeit für die Brauerei Brinkhoff
+    (Brau und Brunnen, Dortmund) als Agenturdienstleistung
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2008
+  contents: >
+    Berater im Beratungsprogramm Wirtschaft
+    NRW
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2009
+  contents: |
+    Gründercoach bei der KfW Beraterbörse über die Wirtschaftsförderungsgesellschaft für den Kreis Unna
+    mbH Mitglied im Beachausschuss des Westdeutschen Volleyball-Verbandes, Interessenvertreter der Ausrichter/Veranstalter
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2011
+  contents: 'PR- und Öffentlichkeitsarbeit für die Dortmunder Brauereien (Radeberger Gruppe Frankfurt) als Agenturdienstleistung'
+- 
+  itemtype: heading
+  heading: EVENT-ORGANISATION
+  date: ""
+  contents: ""
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 1997
+  contents: >
+    Organisation von offiziellen
+    Beachvolleyball Ranglisten-turnieren des
+    Westdeutschen Volleyball-Verbandes,
+    West-deutschen Mixed Meisterschaften und
+    Stadtmeisterschaften
+- 
+  itemtype: ""
+  heading: ""
+  date: 2003, 2004
+  contents: >
+    Tag des Laufens, 1./2. Dortmunder
+    Läufermesse, Helmut-Körnighalle
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2004
+  contents: 'Kids-Markt; inzwischen über 100 Kids-Märkte in Städten der Region: Unna, Kamen, Schwerte, Hamm, Castrop-Rauxel, Werl, Ahlen, Hemer, Hagen'
+- 
+  itemtype: ""
+  heading: ""
+  date: "2005"
+  contents: >
+    Konzept/Durchführung NRW-City-Offensive
+    „Ab in die Mitte“
+- 
+  itemtype: ""
+  heading: ""
+  date: "2006"
+  contents: 'Vierte Vitamin-B Party: Das Netzwerk für Geschäftsleute; Referent: Frank Busemann (Erfolgstaktiken in Sport/Wirtschaft)'
+- 
+  itemtype: ""
+  heading: ""
+  date: 2008, 2010, 2012, 2014
+  contents: >
+    Planung, Beratung und PR bei der
+    Jugendmesse für Bildung und Beruf „Du
+    bist die Zukunft“, Stadthalle Unna
+- 
+  itemtype: ""
+  heading: ""
+  date: "2012"
+  contents: >
+    Planung, Beratung, Koordination und
+    PR-Arbeit für Salinenfest für den City
+    Werbering Unna, in der Unnaer Innenstadt
+- 
+  itemtype: ""
+  heading: ""
+  date: seit 2013
+  contents: >
+    Planung, Beratung, Koordination und
+    PR-Arbeit für historischen
+    Westfalenmarkt für den City Werbering
+    Unna, in der Unnaer Fußgängerzone
+- 
+  itemtype: ""
+  heading: ""
+  date: 2013, 2014
+  contents: >
+    Hüpfburgen-Samstag für die
+    Interessengemeinschaft Massener Straße,
+    Unna
+- 
+  itemtype: ""
+  heading: ""
+  date: "2014"
+  contents: |
+    Organisation, Durchführung, Moderation der Kindersprint-Schulmeisterschaften in Unna, Holzwickede und Lünen
+    Erste Längste Kaffeetafel für die Interessengemeinschaft Massener Straße, Unna
+- 
+  itemtype: ""
+  heading: ""
+  date: "2015"
+  contents: >
+    Organisation, Durchführung, Planung, PR
+    des 1. Oldtimer-Treffen – Haus am
+    Kurpark, Unna
+- 
+  itemtype: ""
+  heading: ""
+  date: 2015, 2016
+  contents: |
+    Organisation, Durchführung, Moderation der Kindersprint-Schulmeisterschaften in Unna, Holzwickede und Lünen
+    Organisation, Durchführung, Moderation des Kinder-Slaloms – Bobbycar-Rennen als Attraktion für Kinder im Rahmen der City-Gesundheitsmesse in der Unnaer City
+- 
+  itemtype: ""
+  heading: ""
+  date: 2016, 2018
+  contents: >
+    Planung, Beratung und Koordination der
+    Kirmes Hellweg Rummel für den
+    Gewerbeverein Unna-Massen, mit
+    Straßensperrung auf dem Massener
+    Hellweg
+- 
+  itemtype: ""
+  heading: ""
+  date: "2019"
+  contents: >
+    Westdeutsche Volleyball
+    Jugendmeisterschaft weiblich U14 in
+    Holzwickede
+- 
+  itemtype: ""
+  heading: ""
+  date: SONSTIGE KENNTNISSE
+  contents: |
+    Computerkenntnisse: MS-Office Paket, Internet, New Media • Erfahrung mit Content-Management-Systemen
+    Fremdsprachen: Englisch, Französisch, Latein
+    Führerscheine: Klasse 1, 2, 3
+    Volleyballtrainer: Trainer B-Lizenz
+    Weitere Qualifikation: DLRG Rettungsschwimmpass - silber
+    Hobby: Reisen, (Beach-)Volleyball, Segeln, Skifahren, Motorrad
+
+----
+
+Vitaimages:
+
+- img_7095.jpg
+- img_7129.jpg
+- img_7123.jpg
+
+----
+
+Downloads: 
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 
+
+----
+
+Portraitimage: - img_7118.jpg

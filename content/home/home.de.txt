@@ -1,0 +1,38 @@
+Title: Startseite
+
+----
+
+Subtitle: 
+
+----
+
+Featuredimage: 
+
+----
+
+Headerimage:
+
+- wilberg-home.jpg
+
+----
+
+Text:
+
+**Herzlich Willkommen auf meiner Website,**
+mit der ich mich um Ihre Stimme bei der nächsten Bürgermeisterwahl am 13. September in Unna bewerbe. Ich trete ganz bewusst als parteiloser Kandidat zur Wahl in Unna an, weil ich daran glaube, dass Unna nicht auf der Grundlage von Parteienkalkül verwaltet werden sollte, sondern auf der Basis Ihrer Wünsche, Sorgen, Begehrlichkeiten und Vorstellungen. 
+Ganz im Sinne unserer Stadt möchte ich im Dialog mit den Bürgerinnen und Bürgern Probleme erkennen, Lösungen erarbeiten, neue Impulse setzen und den Wandel zu einer lebenswerteren Stadt weiter vorantreiben. „Nicht reden und kritisieren, sondern anpacken und aktiv gestalten“, ist die Motivation, mich für Unna zu engagieren.
+Ich bin kein Berufspolitiker, aber mit dem freien Blick von außen auf alte Strukturen, möchte ich Unna wieder beleben. Das geht nur gemeinsam mit allen Bürgerinnen und Bürgern. Ich lade Sie gerne ein, mir hier Ihre Anregungen, Fragen und Kritiken zu senden. Gemeinsam werden wir ein zukunftsgewandtes und lebenswertes Unna gestalten. 
+Unsere Stadt kann mehr, sie verdient mehr und wenn wir alte Strukturen mit Leidenschaft, Innovation und Herzblut aufbrechen, dann gelingt uns die Metamorphose. 
+
+„Immer im selben Saft mitschwimmen war gestern, den Bornekamp-Teich mit Frischwasser fluten und neue (Wasser-)Wege gehen, ist heute!“ 
+
+Jens Ole Wilberg
+**Für ein lebenswertes Unna**
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

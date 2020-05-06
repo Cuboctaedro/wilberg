@@ -1,0 +1,32 @@
+Title: Wohnraum
+
+----
+
+Subtitle: 
+
+----
+
+Featuredimage: 
+
+----
+
+Headerimage: 
+
+----
+
+Text:
+
+**Wohnraum**
+Wohnen wird immer teurer: Bezahlbarer und menschenwürdiger Wohnraum müssen Kernforderungen jeder Politik sein. Es ist eines der großen drängenden Probleme. Ich sehe eine Kommune ohne Mietwucher und mit ausreichendem Wohnraum für alle. Zukünftig muss Wohnraum geschaffen werden und die Bedingungen für private Investoren so gestaltet werden, dass diese angemessenen Wohnraum preiswert zur Verfügung stellen können. Ich bin gegen Mietwucher und werde alle Instrumente in die Hand nehmen, die den Wettbewerb auf dem Wohnungsmarkt verzerren. Mieter sollen sich in Unna wohl, sicher und geborgen fühlen. So klappt es dann auch mit der Stadtentwicklung und einem harmonischen Miteinander in der Stadt. Ein Bürgermeister ist verantwortlich für ein gleichberechtigtes Leben aller in der Stadt.
+
+----
+
+Sectionid: wohnraum
+
+----
+
+Description: 
+
+----
+
+Authortwitter: 

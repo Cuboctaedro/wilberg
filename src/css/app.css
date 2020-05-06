@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "./_base.css";
+
+@import "tailwindcss/components";
+@import "./_grid.css";
+@import "./_generated.css";
+@import "./_forms.css";
+@import "./_hero.css";
+@import "./_menu.css";
+@import "./_tabs.css";
+@import "./_home.css";
+
+
+@import "tailwindcss/utilities";
+
+
+
+
+
+
+

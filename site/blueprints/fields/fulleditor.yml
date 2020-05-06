@@ -1,0 +1,21 @@
+label: Text
+ type: markdown
+invisibles: false
+size: medium
+font:
+    family: sans-serif
+    scaling: true
+    size: regular
+buttons:
+  - headlines
+    - h2
+    - h3
+    - h4
+  - bold
+  - italic
+  - link
+  - email
+  - ul
+  - ol
+  - blockquote
+  - pagelink

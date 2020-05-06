@@ -1,0 +1,19 @@
+label:
+    en: Text
+    el: Κείμενο
+type: markdown
+invisibles: false
+size: medium
+font:
+    family: sans-serif
+    scaling: true
+    size: regular
+buttons:
+  - bold
+  - italic
+  - link
+  - email
+  - ul
+  - ol
+  - blockquote
+  - pagelink

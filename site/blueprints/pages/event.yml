@@ -1,0 +1,64 @@
+title: Event
+
+tabs:
+    content:
+        label: Content
+        icon: text
+        columns:
+          - width: 2/3
+            sections:
+                content:
+                    type: fields
+                    fields:
+                         subtitle:
+                            type: text
+                            label: Subtitle
+                       date:
+                            type: date
+                            label: Date
+                            width: 1/2
+                        time:
+                            label: Time
+                            type: time
+                            width: 1/2
+                        subject:
+                            type: pages
+                            label: Section
+                            multiple: false
+                            query: site.pages.filterBy("intendedTemplate", "section")
+                            width: 1/2
+                        location:
+                            type: text
+                            label: Location
+                            width: 1/2
+                        kinder:
+                            label: Kinder
+                            type: toggle
+                            width: 1/2
+                            text:
+                                - Nein
+                                - Ja
+                        freiluft:
+                            label: Freiluft
+                            type: toggle
+                            width: 1/2
+                            text:
+                                - Nein
+                                - Ja
+                        featuredimage:
+                            extends: fields/image
+                            label: Featured Image
+                            width: 1/2
+                        headerimage:
+                            extends: fields/image
+                            label: Header Image
+                            width: 1/2
+                        text:
+                            extends: fields/mideditor
+                            label: Text
+         - width: 1/3
+            sections:
+                pagefiles:
+                    extends: sections/pagefiles
+
+    seo: tabs/seo
